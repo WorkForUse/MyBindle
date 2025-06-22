@@ -42,8 +42,9 @@ const Header = () => {
               {/* Logo on left (desktop & mobile) */}
               <div className="flex flex-1 justify-center sm:justify-start">
                 <img
+                  type="image/png"
                   className="h-8 w-autos"
-                  src="/logo.png"
+                  src="../public/logo.png"
                   alt="Logo"
                 />
               </div>

@@ -7,28 +7,28 @@ const AboutPage = () => {
   const toggleTestimonials = () => {
     setShowMore(!showMore);
   };
-
+  
   const mainTestimonials = [
-    { name: "Emily R", country: "USA", avatar: "Avatar1.png" },
-    { name: "Amit K", country: "India", avatar: "Avatar2.png" },
-    { name: "Sophie M", country: "Brazil", avatar: "Avatar5.png" },
-    { name: "Javier L", country: "Spain", avatar: "Avatar4.png" },
-    { name: "Lucas T", country: "Brazil", avatar: "avatar3.png" },
-    { name: "Nora S", country: "Canada", avatar: "Avatar6.png" },
+    { name: "Emily R", country: "USA", avatar: "../src/ImgS/Avatar1.png" },
+    { name: "Amit K", country: "India", avatar: "../src/ImgS/Avatar2.png" },
+    { name: "Sophie M", country: "Brazil", avatar: "../src/ImgS/Avatar5.png" },
+    { name: "Javier L", country: "Spain", avatar: "../src/ImgS/Avatar4.png" },
+    { name: "Lucas T", country: "Brazil", avatar: "../src/ImgS/Avatar3.png" },
+    { name: "Nora S", country: "Canada", avatar: "../src/ImgS/Avatar6.png" },
   ];
 
   const extraTestimonials = [
     {
-      name: "Patriick",
+      name: "Patrick",
       profession: "Product Designer at COVEO",
-      avatar: "Avatar-7.png",
+      avatar: "../src/ImgS/Avatar-7.png",
       text:
         "This platform brings people closer in the best way possible! From reconnecting with old friends to making new ones, every moment is valuable.",
     },
     {
       name: "Olena S",
       profession: "Artist at Sergienko",
-      avatar: "Avatar-8.png",
+      avatar: "../src/ImgS/Avatar-8.png",
       text:
         "A social network that actually listens to its users! The design is sleek, the features are powerful, and the experience is seamless.",
     },
@@ -37,7 +37,6 @@ const AboutPage = () => {
   return (
     <div className="Testimonial">
       <h1 className="text-center text-5xl font-bold mb-8">What Our Users Say</h1>
-
       {/* First 6 Testimonials */}
       <div className="grid grid-cols-3 gap-4">
         {mainTestimonials.map((user, i) => (
@@ -52,8 +51,8 @@ const AboutPage = () => {
             </p>
             <div className="flex mt-4 gap-4 items-center">
               <img
-                src={`../assets/${user.avatar}`}
-                alt=""
+                src={user.avatar}
+                alt={`${user.name}'s avatar`}
                 style={{ borderRadius: "30px", width: "50px", height: "50px" }}
               />
               <span>
@@ -65,7 +64,7 @@ const AboutPage = () => {
         ))}
       </div>
 
-      {/* Partial View of Extra Testimonials */}
+      {/* Extra Testimonials */}
       <div
         className={`grid grid-cols-3 gap-4 mt-6 transition-all duration-500 relative ${
           showMore ? "h-auto" : "h-[220px] overflow-hidden"
@@ -76,8 +75,8 @@ const AboutPage = () => {
           <p>{extraTestimonials[0].text}</p>
           <div className="flex mt-4 gap-4 items-center">
             <img
-              src={`../assets/${extraTestimonials[0].avatar}`}
-              alt=""
+              src={extraTestimonials[0].avatar}
+              alt="Extra Avatar 1"
               style={{ borderRadius: "30px", width: "50px", height: "50px" }}
             />
             <span>
@@ -103,8 +102,8 @@ const AboutPage = () => {
           <p>{extraTestimonials[1].text}</p>
           <div className="flex mt-12 gap-4 items-center">
             <img
-              src={`../assets/${extraTestimonials[1].avatar}`}
-              alt=""
+              src={extraTestimonials[1].avatar}
+              alt="Extra Avatar 2"
               style={{ borderRadius: "30px", width: "50px", height: "50px" }}
             />
             <span>

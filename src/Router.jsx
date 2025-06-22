@@ -6,16 +6,21 @@ import Services from '../components/Services';
 import ContactPage from '../components/ContactPage';
 import ErrorPage from '../components/ErrorPage';
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />,
+      errorElement: <ErrorPage />,
+      children: [
+        { index: true, element: <HomePage /> },
+        { path: 'services', element : <Services /> },
+        { path: 'about', element: <AboutPage /> },
+        { path: 'contact', element: <ContactPage /> },
+      ],
+    },
+  ],
   {
-    path: '/',
-    element: <App />,
-    errorElement: <ErrorPage />,
-    children: [
-      { index: true, element: <HomePage /> },
-      { path: 'services', element : <Services />},
-      { path: 'about', element: <AboutPage /> },
-      { path: 'contact', element: <ContactPage /> },
-    ],
-  },
-]);
+    basename: '/MyBindle',
+  }
+);

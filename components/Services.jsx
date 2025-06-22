@@ -4,7 +4,7 @@ const Services = () => {
     <>
       <div className="SprConn">
         <div>
-          <img src="../assets/mobileImageSecond.png" alt="" />
+          <img src="../src/ImgS/mobileImageSecond.png" alt="" />
         </div>
 
         <div className="text-start">
@@ -75,11 +75,11 @@ const Services = () => {
           </div>
 
             <div className="abs-1">
-            <img src="../assets/MobileImage3.png" alt="" />
+            <img src="../src/ImgS/MobileImage3.png" alt="" />
             </div>
 
             <div className="abs-2">
-            <img src="../assets/MobileImageFourth.png" alt="" />
+            <img src="../src/ImgS/MobileImageFourth.png" alt="" />
             </div>
 
         </div>
