@@ -1,4 +1,4 @@
-import Logo from 'MyBindle/src/assets/images/logo.png';
+import Logo from '../src/assets/images/logo.png';
 import { Link, useLocation } from 'react-router-dom';
 import {
   Disclosure,
