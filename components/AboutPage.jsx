@@ -1,34 +1,44 @@
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 
+// Importing images properly
+import Avatar1 from '../public/images/Avatar1.png';
+import Avatar2 from '../public/images/Avatar2.png';
+import Avatar3 from '../public/images/Avatar3.png';
+import Avatar4 from '../public/images/Avatar4.png';
+import Avatar5 from '../public/images/Avatar5.png';
+import Avatar6 from '../public/images/Avatar6.png';
+import Avatar7 from '../public/images/Avatar-7.png';
+import Avatar8 from '../public/images/Avatar-8.png';
+
 const AboutPage = () => {
   const [showMore, setShowMore] = useState(false);
 
   const toggleTestimonials = () => {
     setShowMore(!showMore);
   };
-  
+
   const mainTestimonials = [
-    { name: "Emily R", country: "USA", avatar: "../src/ImgS/Avatar1.png" },
-    { name: "Amit K", country: "India", avatar: "../src/ImgS/Avatar2.png" },
-    { name: "Sophie M", country: "Brazil", avatar: "../src/ImgS/Avatar5.png" },
-    { name: "Javier L", country: "Spain", avatar: "../src/ImgS/Avatar4.png" },
-    { name: "Lucas T", country: "Brazil", avatar: "../src/ImgS/Avatar3.png" },
-    { name: "Nora S", country: "Canada", avatar: "../src/ImgS/Avatar6.png" },
+    { name: "Emily R", country: "USA", avatar: Avatar1 },
+    { name: "Amit K", country: "India", avatar: Avatar2 },
+    { name: "Sophie M", country: "Brazil", avatar: Avatar5 },
+    { name: "Javier L", country: "Spain", avatar: Avatar4 },
+    { name: "Lucas T", country: "Brazil", avatar: Avatar3 },
+    { name: "Nora S", country: "Canada", avatar: Avatar6 },
   ];
 
   const extraTestimonials = [
     {
       name: "Patrick",
       profession: "Product Designer at COVEO",
-      avatar: "../src/ImgS/Avatar-7.png",
+      avatar: Avatar7,
       text:
         "This platform brings people closer in the best way possible! From reconnecting with old friends to making new ones, every moment is valuable.",
     },
     {
       name: "Olena S",
       profession: "Artist at Sergienko",
-      avatar: "../src/ImgS/Avatar-8.png",
+      avatar: Avatar8,
       text:
         "A social network that actually listens to its users! The design is sleek, the features are powerful, and the experience is seamless.",
     },
@@ -37,6 +47,7 @@ const AboutPage = () => {
   return (
     <div className="Testimonial">
       <h1 className="text-center text-5xl font-bold mb-8">What Our Users Say</h1>
+
       {/* First 6 Testimonials */}
       <div className="grid grid-cols-3 gap-4">
         {mainTestimonials.map((user, i) => (
@@ -55,10 +66,10 @@ const AboutPage = () => {
                 alt={`${user.name}'s avatar`}
                 style={{ borderRadius: "30px", width: "50px", height: "50px" }}
               />
-              <span>
-                {user.name} <br />
-                <span className="text-gray-600">{user.country}</span>
-              </span>
+              <div>
+                <div>{user.name}</div>
+                <div className="text-gray-600">{user.country}</div>
+              </div>
             </div>
           </div>
         ))}
@@ -66,9 +77,8 @@ const AboutPage = () => {
 
       {/* Extra Testimonials */}
       <div
-        className={`grid grid-cols-3 gap-4 mt-6 transition-all duration-500 relative ${
-          showMore ? "h-auto" : "h-[220px] overflow-hidden"
-        }`}
+        className={`grid grid-cols-3 gap-4 mt-6 transition-all duration-500 relative ${showMore ? "h-auto" : "h-[220px] overflow-hidden"
+          }`}
       >
         {/* Left Extra */}
         <div className="fdb shadow-lg">
@@ -79,10 +89,10 @@ const AboutPage = () => {
               alt="Extra Avatar 1"
               style={{ borderRadius: "30px", width: "50px", height: "50px" }}
             />
-            <span>
-              {extraTestimonials[0].name} <br />
-              <span className="text-gray-600">{extraTestimonials[0].profession}</span>
-            </span>
+            <div>
+              <div>{extraTestimonials[0].name}</div>
+              <div className="text-gray-600">{extraTestimonials[0].profession}</div>
+            </div>
           </div>
         </div>
 
@@ -106,10 +116,10 @@ const AboutPage = () => {
               alt="Extra Avatar 2"
               style={{ borderRadius: "30px", width: "50px", height: "50px" }}
             />
-            <span>
-              {extraTestimonials[1].name} <br />
-              <span className="text-gray-600">{extraTestimonials[1].profession}</span>
-            </span>
+            <div>
+              <div>{extraTestimonials[1].name}</div>
+              <div className="text-gray-600">{extraTestimonials[1].profession}</div>
+            </div>
           </div>
         </div>
 

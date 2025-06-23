@@ -1,3 +1,4 @@
+import Logo from '../public/logo.png';
 import { Link, useLocation } from 'react-router-dom';
 import {
   Disclosure,
@@ -5,6 +6,8 @@ import {
   DisclosurePanel,
 } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+
+// Import Logo Image Correctly
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -43,8 +46,8 @@ const Header = () => {
               <div className="flex flex-1 justify-center sm:justify-start">
                 <img
                   type="image/png"
-                  className="h-8 w-autos"
-                  src="../public/logo.png"
+                  className="h-8 w-auto"
+                  src={Logo}
                   alt="Logo"
                 />
               </div>

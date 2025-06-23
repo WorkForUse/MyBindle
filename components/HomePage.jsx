@@ -1,4 +1,8 @@
 import homePageContent from '../src/data/HomePageData';
+// imported logo and images
+import Logo from '../public/logo.png';
+import MobileOne from '../public/images/mobileOne.png';
+import MobileImageSecond from '../public/images/mobileImageSecond.png';
 
 const HomePage = () => {
   const { banner, featuresTitle, featuresSubtitle, features, publicity } = homePageContent;
@@ -8,7 +12,7 @@ const HomePage = () => {
       <div className='hmPg'>
         <div className="logoCenter">
           <h5 className='text-2xl font-bold'>
-            <img width={50} src="../public/logo.png" alt="" /> My Bindle
+            <img width={50} src={Logo} alt="Logo" /> My Bindle
           </h5>
 
           <div className="flex BannerOne">
@@ -23,10 +27,10 @@ const HomePage = () => {
             </div>
 
             <div style={{ width: '50%' }} className='relative sc-Column'>
-              <img src="../src/ImgS/mobileOne.png" className='w-80 absolute' style={{ top: '0%', left: '30%' }} alt="" />
+              <img src={MobileOne} className='w-80 absolute' style={{ top: '0%', left: '30%' }} alt="Mobile Phone" />
               {banner.features.map((feat, idx) => (
                 <div key={idx} className={`smConnection-dsExplore absolute flex bg-white text-black p-3 ${idx === 0 ? 'tp-left' : 'bm-left'}`}>
-                  <img src={feat.icon} width={30} alt="" />
+                  <img src={feat.icon} width={30} alt="Feature Icon" />
                   <h3>{feat.text}</h3>
                 </div>
               ))}
@@ -53,7 +57,7 @@ const HomePage = () => {
         {/* Publicity Section */}
         <div className="SprConn">
           <div>
-            <img src="../src/ImgS/mobileImageSecond.png" alt="" />
+            <img src={MobileImageSecond} alt="Mobile Image" />
           </div>
           <div className="text-start">
             <h1 className="text-4xl font-bold mb-5">{publicity.heading}</h1>

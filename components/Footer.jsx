@@ -1,3 +1,6 @@
+import FooterIMG1 from '../public/images/FooterIMG-1.png';
+import FooterIMG2 from '../public/images/FooterIMG-2.png';
+
 const Footer = () => {
   return (
     <footer>
@@ -49,11 +52,11 @@ const Footer = () => {
         </div>
 
         <div className="abs-1">
-          <img src="../src/ImgS/FooterIMG-1.png" alt="Footer Design 1" />
+          <img src={FooterIMG1} alt="Footer Design 1" />
         </div>
 
         <div className="abs-2">
-          <img src="../src/ImgS/FooterIMG-2.png" alt="Footer Design 2" />
+          <img src={FooterIMG2} alt="Footer Design 2" />
         </div>
 
       </div>
