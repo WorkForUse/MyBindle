@@ -1,5 +1,5 @@
-import FooterIMG1 from '../src/assets/images/FooterIMG-1.png';
-import FooterIMG2 from '../src/assets/images/FooterIMG-2.png';
+import FooterIMG1 from 'MyBindle/src/assets/images/FooterIMG-1.png';
+import FooterIMG2 from 'MyBindle/src/assets/images/FooterIMG-2.png';
 
 const Footer = () => {
   return (

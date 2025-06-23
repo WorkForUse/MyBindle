@@ -2,14 +2,14 @@ import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 
 // Importing images properly
-import Avatar1 from '../src/assets/images/Avatar1.png';
-import Avatar2 from '../src/assets/images/Avatar2.png';
-import Avatar3 from '../src/assets/images/Avatar3.png';
-import Avatar4 from '../src/assets/images/Avatar4.png';
-import Avatar5 from '../src/assets/images/Avatar5.png';
-import Avatar6 from '../src/assets/images/Avatar6.png';
-import Avatar7 from '../src/assets/images/Avatar-7.png';
-import Avatar8 from '../src/assets/images/Avatar-8.png';
+import Avatar1 from 'MyBindle/src/assets/images/Avatar1.png';
+import Avatar2 from 'MyBindle/src/assets/images/Avatar2.png';
+import Avatar3 from 'MyBindle/src/assets/images/Avatar3.png';
+import Avatar4 from 'MyBindle/src/assets/images/Avatar4.png';
+import Avatar5 from 'MyBindle/src/assets/images/Avatar5.png';
+import Avatar6 from 'MyBindle/src/assets/images/Avatar6.png';
+import Avatar7 from 'MyBindle/src/assets/images/Avatar-7.png';
+import Avatar8 from 'MyBindle/src/assets/images/Avatar-8.png';
 
 const AboutPage = () => {
   const [showMore, setShowMore] = useState(false);

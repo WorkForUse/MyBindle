@@ -1,7 +1,7 @@
 // ✅ Import Images
-import MobileImageSecond from '../src/assets/images/mobileImageSecond.png';
-import MobileImage3 from '../src/assets/images/MobileImage3.png';
-import MobileImageFourth from '../src/assets/images/MobileImageFourth.png';
+import MobileImageSecond from 'MyBindle/src/assets/images/mobileImageSecond.png';
+import MobileImage3 from 'MyBindle/src/assets/images/MobileImage3.png';
+import MobileImageFourth from 'MyBindle/src/assets/images/MobileImageFourth.png';
 
 const Services = () => {
   return (
