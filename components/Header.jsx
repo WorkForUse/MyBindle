@@ -1,4 +1,4 @@
-import Logo from '../public/logo.png';
+import Logo from '../src/assets/images/logo.png';
 import { Link, useLocation } from 'react-router-dom';
 import {
   Disclosure,

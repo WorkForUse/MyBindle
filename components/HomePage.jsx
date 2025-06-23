@@ -1,8 +1,8 @@
 import homePageContent from '../src/data/HomePageData';
 // imported logo and images
-import Logo from '../public/logo.png';
-import MobileOne from '../public/images/mobileOne.png';
-import MobileImageSecond from '../public/images/mobileImageSecond.png';
+import Logo from '../src/assets/images/logo.png';
+import MobileOne from '../src/assets/images/mobileOne.png';
+import MobileImageSecond from '../src/assets/images/mobileImageSecond.png';
 
 const HomePage = () => {
   const { banner, featuresTitle, featuresSubtitle, features, publicity } = homePageContent;
