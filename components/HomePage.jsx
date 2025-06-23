@@ -1,8 +1,8 @@
-import homePageContent from 'MyBindle/src/data/HomePageData';
+import homePageContent from '../src/data/HomePageData';
 // imported logo and images
-import Logo from 'MyBindle/src/assets/images/logo.png';
-import MobileOne from 'MyBindle/src/assets/images/mobileOne.png';
-import MobileImageSecond from 'MyBindle/src/assets/images/mobileImageSecond.png';
+import Logo from '../src/assets/images/logo.png';
+import MobileOne from '../src/assets/images/mobileOne.png';
+import MobileImageSecond from '../src/assets/images/mobileImageSecond.png';
 
 const HomePage = () => {
   const { banner, featuresTitle, featuresSubtitle, features, publicity } = homePageContent;
